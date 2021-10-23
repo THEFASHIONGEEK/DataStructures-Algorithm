@@ -5,8 +5,7 @@ def canPartition(nums: List[int]) -> bool:
         return False
     else:
         half_sum = arr_sum // 2
-        dp = [[False for _ in range(half_sum+1)] for _ in range(n+1)]
-        
+        dp = [[False for _ in range(half_sum+1)] for _ in range(n+1)]  
         for i in range(n+1):
             for j in range(half_sum+1):
                 if j == 0:
